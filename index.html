@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website For you!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+
+<style>
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    body{
+      font-family: 'Raleway';font-size: 22px;
+      font-size: larger;
+    }
+main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url('img/project.jpg') no-repeat center;
+  background-size: cover; */
+}
+.launch-time div{
+  flex-basis: 100px;
+  padding-left: 20px;
+}
+.launch-time div p{
+  font-size: 60px;
+  margin-top: -14px;
+  margin-bottom: -14px;
+}
+.you{
+  font-size: 2rem;
+}
+.schedule{
+  margin-top: 20rem !important;
+}
+.im{
+  height: 100vh;
+  width: 100vw;
+  object-fit: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+</style>
+</head>
+ <body>
+
+  <div id="preloader"></div>
+
+
+  <!-- Main -->
+  <main class="" style="color: white;">
+    <img src="img/project.jpg" alt="" class="im">
+     <!-- MY Schedule -->
+     <div class="schedule mt-5"  >
+      <div class="launch-time d-flex justify-content-center">
+       <div>
+         <p id="days">00</p>
+         <span>DAYS</span>
+       </div>
+       <div>
+         <p id="hours">00</p>
+         <span>HOURS</span>
+       </div>
+       <div>
+         <p id="minutes">00</p>
+         <span>MINUTES</span>
+       </div>
+       <div>
+         <p id="seconds">00</p>
+         <span>SECONDS</span>
+       </div>
+     </div>
+     <p class="mt-2 text-center you">To having you with me &#129293;</p>
+   </div>
+  </main>
+
+<!-- Footer -->
+  <footer style="position: absolute; bottom: 0;">
+<div>
+  © Copyright 2023 <a href="https://www.instagram.com/abdullahjani100/">@abdullahjani100.</a> All Rights Reserved.
+</div>
+  </footer>
+
+<script>
+  var loader=document.getElementById("preloader");
+window.addEventListener("load",function(){
+loader.style.display = "none";
+})
+</script>
+
+<script>
+  var countDownDate=new Date("Dec 30,2023 00:00:00").getTime();
+        var x=setInterval(function(){
+          var now=new Date().getTime();
+          var distance=countDownDate - now
+      
+         var days=Math.floor(distance/(1000 * 60 *60 * 24));
+         var hours=Math.floor((distance % (1000 * 60 *60 * 24)) / (1000 * 60 * 60))
+         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      
+         var seconds=Math.floor((distance % (1000 * 60 )) / (1000));
+      
+         document.getElementById("days").innerHTML=days
+         document.getElementById("hours").innerHTML=hours
+         document.getElementById("minutes").innerHTML=minutes
+         document.getElementById("seconds").innerHTML=seconds
+      
+         if (distance < 0){
+          clearInterval(x);
+          document.getElementById("days").innerHTML="00";
+          document.getElementById("hours").innerHTML="00";
+          document.getElementById("minutes").innerHTML="00";
+          document.getElementById("seconds").innerHTML="00";
+         }
+      
+        },1000)
+</script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ </body>
+</html>
